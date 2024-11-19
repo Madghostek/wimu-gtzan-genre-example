@@ -8,3 +8,24 @@ GTZAN is a dataset that's considered the "MNIST of music AI". It's a genre class
 It's been very widely discussed in the music AI / music information retrieval community, but from an educational point of view it's a great dataset to get started with.
 
 I higly recommend reading the the original GTZAN paper ["Musical Genre Classification of Audio Signals](https://www.cs.cmu.edu/~gtzan/work/pubs/tsap02gtzan.pdf) from 2002 by George Tzanetakis (G.Tzan, get it? 😉) and Perry Cook.
+
+# Setup and informations
+
+Download the dataset from kaggle and setup folder structure:
+```bash
+sh setup.sh
+```
+
+Install requirements (venv recommended)
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Run experiment:
+```bash
+python train.py
+```
+
+Around 2GB of VRAM and 8GB of disk space is used.
